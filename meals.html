@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar Food | Meals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="MealsStyle.css">
+    <link rel="icon" href="./front page/VINEGAR (2).png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="Index.html"><img src="./front page/LOGO.png" alt="vinegarfood"
+                    style="width: 140px; height: 55px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="meals.html" id="mealsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Meals
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-2" aria-labelledby="mealsDropdown">
+                            <li><a class="dropdown-item" href="meals.html#regular">Regular</a></li>
+                            <li><a class="dropdown-item" href="meals.html#lunch">Lunch</a></li>
+                            <li><a class="dropdown-item" href="meals.html#snacks">Snacks</a></li>
+                            <li><a class="dropdown-item" href="meals.html#desert">Dessert</a></li>
+                            <li><a class="dropdown-item" href="meals.html#beverages">Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Awards.html">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Catering.html">Catering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Recipe.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact .html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FeedBack.html">Feedback</a></li>
+                    <li class="nav-item">
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Our Delicious Meals</h1>
+            <p>Discover a world of flavors crafted with passion</p>
+            <a href="#regular" class="btn btn-hero">Explore Menu</a>
+        </div>
+    </section>
+
+ 
+    <section class="py-4">
+        <div class="container pt-2">
+            <div class="section-title">
+                <h2 class="text-center">Featured<span> Meals</span></h2>
+                <p class="text-center">Discover our most popular dishes</p>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="meals-button mt-3 mb-3" id="meals-nav">
+                <a href="#regular" class="btn btn-meals me-2 active">Regular</a>
+                <a href="#lunch" class="btn btn-meals me-2">Lunch</a>
+                <a href="#snacks" class="btn btn-meals me-2">Snacks</a>
+                <a href="#desert" class="btn btn-meals me-2">Dessert</a>
+                <a href="#beverages" class="btn btn-meals">Beverages</a>
+            </div>
+        </div>
+
+        <!------------------Regular Meals------------- -->
+
+        <div class="meal-category visible" id="regular">
+            <div class="container">
+                <h2 class="regular visible">Regular</h2>
+            </div>
+            <div class="container reg p-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Regular/Beef Steak.jpg" class="card-img-top" alt="Grilled Beef Steak">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Grilled Beef</h5>
+                                <p class="text-orange fw-bold">Rs. 1500</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Regular/BBQ Ribs.jpeg" class="card-img-top" alt="BBQ Ribs">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">BBQ Ribs</h5>
+                                <p class="text-orange fw-bold">Rs. 2500</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Regular/fried chicken.jpg" class="card-img-top" alt="Fried Chicken">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Fried Chicken</h5>
+                                <p class="text-orange fw-bold">Rs. 1200</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Regular/Pasta Alfredo.jpeg" class="card-img-top" alt="Pasta Alfredo">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Pasta Alfredo</h5>
+                                <p class="text-orange fw-bold">Rs. 2000</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Regular/fish.jpeg" class="card-img-top" alt="Grilled Fish">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Grilled Fish</h5>
+                                <p class="text-orange fw-bold">Rs. 1500</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Regular/Burger.jpeg" class="card-img-top" alt="Beef Burger">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Beef Burger</h5>
+                                <p class="text-orange fw-bold">Rs. 900</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-cart btn-lg go-to-cart">Go To Cart 🛒</a>
+
+            </div>
+        </div>
+
+        <!---------------------------- Lunch Meals ----------------------->
+
+        <div class="meal-category" id="lunch">
+            <div class="container">
+                <h2 class="regular">Lunch</h2>
+            </div>
+            <div class="container reg p-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Lunch/club sandwich.jpg" class="card-img-top" alt="Sandwich">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Club Sandwich</h5>
+                                <p class="text-orange fw-bold">Rs. 700</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Lunch/ceeze pizza.jpeg" class="card-img-top" alt="pizza">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Cheesy Pizza</h5>
+                                <p class="text-orange fw-bold">Rs. 1800</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Lunch/chicken quesadilla.jpg" class="card-img-top" alt="Chicken Quesidilla">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Chicken Quesidilla</h5>
+                                <p class="text-orange fw-bold">Rs. 1200</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Lunch/pasta.jpeg" class="card-img-top" alt="Pasta">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Pasta</h5>
+                                <p class="text-orange fw-bold">Rs. 800</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Lunch/salad.jpg" class="card-img-top" alt="Chicken Salad">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Chicken Salad</h5>
+                                <p class="text-orange fw-bold">Rs. 1000</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./Lunch/chicken wrap.jpeg" class="card-img-top" alt="chicken wrap">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Chicken wrap</h5>
+                                <p class="text-orange fw-bold">Rs. 700</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-cart btn-lg go-to-cart">Go To Cart 🛒</a>
+
+            </div>
+        </div>
+
+        <!-------------------------Snacks------------------------>
+
+        <div class="meal-category" id="snacks">
+            <div class="container">
+                <h2 class="regular">Snacks</h2>
+            </div>
+            <div class="container reg p-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./snacks/chicken nuggets.jpg" class="card-img-top" alt="nuggets">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Chicken Nuggets</h5>
+                                <p class="text-orange fw-bold">Rs. 1200</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./snacks/chicken wings.jpg" class="card-img-top" alt="chicken wings">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Chicken Wings</h5>
+                                <p class="text-orange fw-bold">Rs. 1400</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./snacks/onion rings.jpg" class="card-img-top" alt="onion rings">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Onion Rings</h5>
+                                <p class="text-orange fw-bold">Rs. 900</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./snacks/shrimp tempura (1).jpg" class="card-img-top" alt="shrimp tempura">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Shrimp Tempura</h5>
+                                <p class="text-orange fw-bold">Rs. 600</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./snacks/fries.jpg" class="card-img-top" alt="Beef Burger">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Crispy Fries</h5>
+                                <p class="text-orange fw-bold">Rs. 500</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./snacks/mozzarella.jpg" class="card-img-top" alt="mozzarella">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Mozzeralla</h5>
+                                <p class="text-orange fw-bold">Rs. 900</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-cart  btn-lg go-to-cart">Go To Cart 🛒</a>
+
+            </div>
+        </div>
+
+        <!----------------------------- Dessert ------------------------------>
+
+        <div class="meal-category" id="desert">
+            <div class="container">
+                <h2 class="regular">Dessert</h2>
+            </div>
+            <div class="container reg p-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./DESSERT/BROWNIE.jpg" class="card-img-top" alt="Brownies">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Choco Brownies</h5>
+                                <p class="text-orange fw-bold">Rs. 1500</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./DESSERT/CHEESECAKE.jpg" class="card-img-top" alt="cheesecake">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Cheese Cake</h5>
+                                <p class="text-orange fw-bold">Rs. 2300</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./DESSERT/CUP CAKE.jpg" class="card-img-top" alt="cup cake">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Cup Cakes</h5>
+                                <p class="text-orange fw-bold">Rs. 800</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./DESSERT/LAVA CAKE.jpg" class="card-img-top" alt="cake">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Choco Lava Cake</h5>
+                                <p class="text-orange fw-bold">Rs. 1800</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./DESSERT/DONUT.jpg" class="card-img-top" alt="DONUT">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Donuts</h5>
+                                <p class="text-orange fw-bold">Rs. 1000</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./DESSERT/ICE CREAM.jpg" class="card-img-top" alt="ice cream">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Choco Ice Cream</h5>
+                                <p class="text-orange fw-bold">Rs. 800</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-cart btn-lg go-to-cart">Go To Cart 🛒</a>
+            </div>
+        </div>
+
+        <!-------------------------------- Beverages ------------------------------->
+
+        <div class="meal-category" id="beverages">
+            <div class="container">
+                <h2 class="regular">Beverages</h2>
+            </div>
+            <div class="container reg p-5">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./beverages/coffee.jpg" class="card-img-top" alt="Coffee">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Capiciano</h5>
+                                <p class="text-orange fw-bold">Rs. 1500</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./beverages/hot chocolate.jpg" class="card-img-top" alt="hot chocolate">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Hot Chocolate</h5>
+                                <p class="text-orange fw-bold">Rs. 1700</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./beverages/shake.jpg" class="card-img-top" alt="shake">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Chocolate Shake</h5>
+                                <p class="text-orange fw-bold">Rs. 600</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./beverages/fresh juice.jpg" class="card-img-top" alt="juice">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Fresh Juices</h5>
+                                <p class="text-orange fw-bold">Rs. 1200</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./beverages/mocktail.jpg" class="card-img-top" alt="mocktail">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Mocktail</h5>
+                                <p class="text-orange fw-bold">Rs. 900</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-4 col-12 mb-4">
+                        <div class="card menu-card" style="animation-delay: 0.2s;">
+                            <img src="./beverages/soft drink.jpg" class="card-img-top" alt="soft drink">
+                            <div class="card-body text-center">
+                                <h5 class="menu-card-title">Soft Drink</h5>
+                                <p class="text-orange fw-bold">Rs. 500</p>
+                                <a href="#" class="btn btn-sm btn-order">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-cart btn-lg go-to-cart">Go To Cart 🛒</a>
+
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Back to Top Button -->
+
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!---------------------------- Footer ------------------------>
+
+    <footer class="text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand" href="Index.html"><img src="./front page/LOGO.png" alt="vinegarfood"
+                            style="width: 200px; height: 75px;"></a>
+                    <p style="font-size: 16px;">
+                        Experience world-class cuisine in an elegant setting. Our chefs create
+                        culinary masterpieces using the finest ingredients from around the globe.
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.facebook.com/share/171YFmo7nP/?mibextid=wwXIfr" class="facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/vinegar_foods?igsh=a2wyNXJzMjl2aTd3&utm_source=qr"
+                            class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@vinegar_foods?_t=ZS-9058cvUOSTI&_r=1" class="tiktok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@vinegar_food?si=0oH5fQAAELyOl9dt" class="youtube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Gourmet Street, Food City</li>
+                        <li><i class="fas fa-phone me-2"></i>(123) 456-7890</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@vinegarfood.com</li>
+                        <li><i class="fas fa-clock me-2"></i>10:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center mt-4 pt-3 border-top border-secondary">
+            <p class="mb-0">© 2025 Vinegar Food Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        
+        const sections = document.querySelectorAll('.meal-category');
+        const revealOnScroll = () => {
+            sections.forEach(sec => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    sec.classList.add('visible');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        
+        document.querySelectorAll('.meals-button a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+              
+                document.querySelectorAll('.meals-button a').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                
+                document.querySelectorAll('.meal-category').forEach(category => {
+                    category.style.display = "none";
+                });
+
+                
+                const targetId = this.getAttribute('href');
+                const targetCategory = document.querySelector(targetId);
+                if (targetCategory) {
+                    targetCategory.style.display = "block";
+                    targetCategory.classList.add('visible');
+                    targetCategory.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('.back-to-top').addClass('visible');
+                } else {
+                    $('.back-to-top').removeClass('visible');
+                }
+            });
+
+            $('.back-to-top').click(function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 800);
+            });
+
+            
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $('.navbar').addClass('shrink');
+                } else {
+                    $('.navbar').removeClass('shrink');
+                }
+            });
+        });
+
+
+        document.querySelectorAll(".btn-order").forEach(btn => {
+            btn.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                const card = btn.closest(".menu-card");
+                const title = card.querySelector(".menu-card-title").innerText;
+                const priceText = card.querySelector(".text-orange, p").innerText.replace(/Rs\.|\s|,/g, "");
+                const price = parseInt(priceText);
+                const image = card.querySelector("img").src;
+
+                
+                let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+                
+                const existing = cart.find(item => item.title === title);
+                if (existing) {
+                    existing.qty++;
+                } else {
+                    cart.push({ title, price, image, qty: 1 });
+                }
+
+                
+                sessionStorage.setItem("cart", JSON.stringify(cart));
+
+                
+                const cartCount = document.getElementById("cart-count");
+                if (cartCount) {
+                    const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+                    cartCount.innerText = totalItems;
+                }
+
+                
+                alert(`${title} added to cart!`);
+            });
+        });
+
+        document.querySelectorAll(".go-to-cart").forEach(btn => {
+            btn.addEventListener("click", function (e) {
+                e.preventDefault(); 
+                window.location.href = "AddToCart.html"; 
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

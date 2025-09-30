@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinegar Food | Gallery</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gallerystyle.css">
+  <link rel="icon" href="./front page/VINEGAR (2).png">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg  sticky-top ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./front page/LOGO.png" alt="vinegarfood" style="width: 140px; height: 55px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+
+          <!-- Meals Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="meals.html" id="mealsDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Meals
+            </a>
+            <ul class="dropdown-menu shadow-lg border-0 rounded-3 p-2" aria-labelledby="mealsDropdown">
+              <li><a class="dropdown-item" href="meals.html#regular">Regular</a></li>
+              <li><a class="dropdown-item" href="meals.html#lunch">Lunch</a></li>
+              <li><a class="dropdown-item" href="meals.html#snacks">Snacks</a></li>
+              <li><a class="dropdown-item" href="meals.html#desert">Dessert</a></li>
+              <li><a class="dropdown-item" href="meals.html#beverages">Beverages</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="awards.html">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="recipe.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero py-5 text-center bg-light">
+    <div class="container">
+      <h1>Our Gallery</h1>
+      <p>Explore the taste, ambience, and moments at Vinegar Food</p>
+    </div>
+  </section>
+
+ 
+  <main class="container my-5">
+    <div id="gallery" class="masonry row g-3">
+     
+      <div class="col-12 col-sm-6 col-md-4 masonry-item">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80" alt="Breakfast Bowl"
+          class="img-fluid rounded">
+        <div class="caption mt-2">
+          <span>Healthy Breakfast Bowl</span>
+          <span class="badge bg-warning">Breakfast</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 masonry-item" data-cat="lunch">
+        <img src="./snacks/mozzarella.jpg" alt="mozeralla"
+          class="img-fluid rounded">
+        <div class="caption mt-2">
+          <span>Mozzeralla</span>
+          <span class="badge bg-success">Snacks</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 masonry-item" data-cat="lunch">
+        <img src="./Regular/Burger.jpeg" alt="Burger"
+          class="img-fluid rounded">
+        <div class="caption mt-2">
+          <span>Gourmet Burger</span>
+          <span class="badge bg-success">Lunch</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 masonry-item" data-cat="lunch">
+        <img src="./beverages/hot chocolate.jpg" alt="hot chocolate"
+          class="img-fluid rounded">
+        <div class="caption mt-2">
+          <span>Hot Chocolate</span>
+          <span class="badge bg-success">Beverages</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 masonry-item">
+        <img src="./DESSERT/ICE CREAM.jpg" alt="ice cream"
+          class="img-fluid rounded">
+        <div class="caption mt-2">
+          <span></span>
+          <span class="badge bg-success">Dessert</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 masonry-item" data-cat="lunch">
+        <img src="./Regular/BBQ Ribs.jpeg" alt="bbq"
+          class="img-fluid rounded">
+        <div class="caption mt-2">
+          <span>BBQ Ribs</span>
+          <span class="badge bg-success">Regular</span>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 masonry-item">
+        <img src="front page/RES3.png" alt="restaurantr"
+          class="img-fluid rounded">
+        <div class="caption mt-2">
+          <span>Restaurant</span>
+          <span class="badge bg-success">Exterior</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="lbTitle"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="lbImage" src="" alt="" class="img-fluid rounded mb-3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+   <footer class="text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand" href="Index.html"><img src="./front page/LOGO.png" alt="vinegarfood"
+                            style="width: 200px; height: 75px;"></a>
+                    <p style="font-size: 16px;">
+                        Experience world-class cuisine in an elegant setting. Our chefs create
+                        culinary masterpieces using the finest ingredients from around the globe.
+                    </p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.facebook.com/share/171YFmo7nP/?mibextid=wwXIfr" class="facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/vinegar_foods?igsh=a2wyNXJzMjl2aTd3&utm_source=qr"
+                            class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@vinegar_foods?_t=ZS-9058cvUOSTI&_r=1" class="tiktok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/@vinegar_food?si=0oH5fQAAELyOl9dt" class="youtube"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Gourmet Street, Food City</li>
+                        <li><i class="fas fa-phone me-2"></i>(123) 456-7890</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@vinegarfood.com</li>
+                        <li><i class="fas fa-clock me-2"></i>10:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center mt-4 pt-3 border-top border-secondary">
+            <p class="mb-0">© 2025 Vinegar Food Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(function () {
+      
+      $('.masonry-item').click(function () {
+        const src = $(this).find('img').attr('src');
+        const title = $(this).find('.caption span:first').text();
+        $('#lbImage').attr('src', src);
+        $('#lbTitle').text(title);
+        $('#lightboxModal').modal('show');
+      });
+    });
+  </script>
+</body>
+
+</html>

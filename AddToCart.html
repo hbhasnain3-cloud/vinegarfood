@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinegar Food | Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="addtocart.css">
+  <link rel="icon" href="./front page/VINEGAR (2).png">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./front page/LOGO.png" alt="vinegarfood" style="width: 140px; height: 55px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="mealsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Meals</a>
+            <ul class="dropdown-menu" aria-labelledby="mealsDropdown">
+              <li><a class="dropdown-item" href="meals.html#regular">Regular</a></li>
+              <li><a class="dropdown-item" href="meals.html#lunch">Lunch</a></li>
+              <li><a class="dropdown-item" href="meals.html#snacks">Snacks</a></li>
+              <li><a class="dropdown-item" href="meals.html#desert">Dessert</a></li>
+              <li><a class="dropdown-item" href="meals.html#beverages">Beverages</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="Awards.html">Awards</a></li>
+          <li class="nav-item"><a class="nav-link" href="Catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="Recipe.html">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="FeedBack.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ---------------- Cart ---------------- -->
+  <div class="container cart mt-5">
+    <h2>Your Cart</h2>
+    <ul class="list-group mt-4" id="cart-items"></ul>
+    <hr>
+    <h4>Total: Rs. <span id="cart-total">0</span></h4>
+    <button class="btn btn-success mt-3 w-100" id="checkoutBtn">Checkout</button>
+  </div>
+
+  <!-- ---------------- Checkout Modal ---------------- -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Checkout Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="checkoutForm">
+            <div class="mb-3">
+              <label for="userName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+              <small id="nameError" style="color:red; display:none;"></small>
+            </div>
+            <div class="mb-3">
+              <label for="userPhone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="userPhone" required>
+            </div>
+            <div class="mb-3">
+              <label for="userAddress" class="form-label">Address</label>
+              <textarea class="form-control" id="userAddress" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn w-100">Confirm Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------- Footer ---------------- -->
+  <footer class="text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand" href="Index.html"><img src="./front page/LOGO.png" alt="vinegarfood"
+              style="width: 200px; height: 75px;"></a>
+          <p style="font-size: 16px;">
+            Experience world-class cuisine in an elegant setting. Our chefs create
+            culinary masterpieces using the finest ingredients from around the globe.
+          </p>
+          <div class="social-icons mt-4">
+            <a href="https://www.facebook.com/share/171YFmo7nP/?mibextid=wwXIfr" class="facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/vinegar_foods?igsh=a2wyNXJzMjl2aTd3&utm_source=qr" class="instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@vinegar_foods?_t=ZS-9058cvUOSTI&_r=1" class="tiktok"><i
+                class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@vinegar_food?si=0oH5fQAAELyOl9dt" class="youtube"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links list-unstyled">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-title">Contact Info</h5>
+          <ul class="footer-links list-unstyled">
+            <li><i class="fas fa-map-marker-alt me-2"></i>123 Gourmet Street, Food City</li>
+            <li><i class="fas fa-phone me-2"></i>(123) 456-7890</li>
+            <li><i class="fas fa-envelope me-2"></i>info@vinegarfood.com</li>
+            <li><i class="fas fa-clock me-2"></i>10:00 AM - 10:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center mt-4 pt-3 border-top border-secondary">
+      <p class="mb-0">© 2023 Vinegar Food Restaurant. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+    let cartItems = document.getElementById("cart-items");
+    let cartTotal = document.getElementById("cart-total");
+    let checkoutBtn = document.getElementById("checkoutBtn");
+
+    function updateCart() {
+      cartItems.innerHTML = "";
+      let total = 0;
+      for (let i = 0; i < cart.length; i++) {
+        total += cart[i].price * cart[i].qty;
+        cartItems.innerHTML +=
+          '<li class="list-group-item d-flex align-items-center justify-content-between">' +
+          '<img src="' + cart[i].image + '" alt="' + cart[i].title + '" style="width:60px; height:60px; object-fit:cover; margin-right:10px;">' +
+          '<div style="flex:1;">' +
+          '<strong>' + cart[i].title + '</strong><br>Rs. ' + cart[i].price + ' x ' + cart[i].qty +
+          '</div>' +
+          '<div>' +
+          '<button class="btn btn-sm btn-secondary" onclick="decreaseQty(' + i + ')">-</button> ' +
+          '<button class="btn btn-sm btn-secondary" onclick="increaseQty(' + i + ')">+</button> ' +
+          '<button class="btn btn-sm btn-danger" onclick="removeItem(' + i + ')">🗑</button>' +
+          '</div>' +
+          '</li>';
+      }
+      cartTotal.innerText = total;
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      saveCart();
+      updateCart();
+    }
+
+    function increaseQty(index) {
+      cart[index].qty++;
+      saveCart();
+      updateCart();
+    }
+
+    function decreaseQty(index) {
+      if (cart[index].qty > 1) {
+        cart[index].qty--;
+      } else {
+        cart.splice(index, 1);
+      }
+      saveCart();
+      updateCart();
+    }
+
+    function saveCart() {
+      sessionStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    checkoutBtn.addEventListener("click", function () {
+      if (cart.length === 0) {
+        alert("Your cart is empty! Please add something before checkout.");
+        return;
+      }
+      let checkoutModal = new bootstrap.Modal(document.getElementById('checkoutModal'));
+      checkoutModal.show();
+    });
+
+    document.getElementById('checkoutForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      let nameInput = document.getElementById('userName');
+      let nameError = document.getElementById('nameError');
+      let name = nameInput.value.trim();
+      let phone = document.getElementById('userPhone').value.trim();
+      let address = document.getElementById('userAddress').value.trim();
+
+
+      let nameRegex = /^[A-Za-z\s]+$/;
+      if (!nameRegex.test(name)) {
+        nameError.style.display = "block";
+        nameError.innerText = "Name must contain only letters (no numbers).";
+        nameInput.focus();
+        return;
+      } else if (name.length < 3) {
+        nameError.style.display = "block";
+        nameError.innerText = "Name must be at least 3 letters long.";
+        nameInput.focus();
+        return;
+      } else {
+        nameError.style.display = "none";
+      }
+
+      if (!phone || !address) {
+        alert("Please fill all fields!");
+        return;
+      }
+
+      let totalAmount = 0;
+      for (let i = 0; i < cart.length; i++) {
+        totalAmount += cart[i].price * cart[i].qty;
+      }
+
+      alert("Thank you " + name + "! Your order has been placed.\nTotal: Rs. " + totalAmount + "\nWe will contact you at " + phone + ".");
+
+      cart = [];
+      saveCart();
+      updateCart();
+
+      let checkoutModalEl = document.getElementById('checkoutModal');
+      let modalInstance = bootstrap.Modal.getInstance(checkoutModalEl);
+      modalInstance.hide();
+
+      document.getElementById('checkoutForm').reset();
+    });
+
+
+    document.getElementById('userName').addEventListener('input', function () {
+      this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+    });
+
+
+    updateCart();
+  </script>
+
+</body>
+
+</html>
